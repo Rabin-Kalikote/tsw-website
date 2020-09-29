@@ -143,7 +143,7 @@ nav .sidenav-trigger:hover {
 }
 
 .intro {
-    padding-top: 10vh;
+    padding-top: 20vh;
     transform: translateY(-64px);
     margin-bottom: -64px;
     width: 100%;
@@ -176,7 +176,7 @@ nav .sidenav-trigger:hover {
 
 .intro-photo-and-text {
     padding: 0 10%;
-    min-height: 56vh;
+    // min-height: 56vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -189,7 +189,7 @@ nav .sidenav-trigger:hover {
 
 @keyframes semicircle-in {
     80% {
-        height: 50vh;
+        height: 100vh;
         border-radius: 0%;
     }
 
@@ -265,10 +265,12 @@ nav .sidenav-trigger:hover {
 }
 
 .intro-text-1 {
+    margin: 0;
     font-size: 3em;
 }
 
 .intro-text-2 {
+    // margin: 0;
     font-size: 2rem;
 }
 
@@ -283,11 +285,15 @@ nav .sidenav-trigger:hover {
     width: 100%;
 }
 
+#sample-website .card {
+    z-index: 1;
+}
+
 #semicircle {
     position: absolute;
     width: 100%;
     background: $gradient;
-    height: 50vh;
+    height: 100vh;
     z-index: 0;
     box-shadow: 0px 4px 6px #00000055;
 }
@@ -360,8 +366,8 @@ video {
 }
 
 #sample-website .card {
-    border-radius: 2rem;
-    margin-top: 50vh;
+    // border-radius: 2rem;
+    margin-top: 100vh;
 }
 
 #sample-website .card.animated {
@@ -377,5 +383,5 @@ video {
 }
     
 .sample-website-image {
-    padding: 0 1em;
+    padding: 1em 1em 0 1em;
 }

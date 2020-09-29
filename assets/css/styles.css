@@ -195,7 +195,7 @@ nav .sidenav-trigger:hover {
 }
 
 .intro {
-  padding-top: 10vh;
+  padding-top: 20vh;
   -webkit-transform: translateY(-64px);
           transform: translateY(-64px);
   margin-bottom: -64px;
@@ -232,7 +232,6 @@ nav .sidenav-trigger:hover {
 
 .intro-photo-and-text {
   padding: 0 10%;
-  min-height: 56vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +249,7 @@ nav .sidenav-trigger:hover {
 /* Animatins */
 @-webkit-keyframes semicircle-in {
   80% {
-    height: 50vh;
+    height: 100vh;
     border-radius: 0%;
   }
   99% {
@@ -264,7 +263,7 @@ nav .sidenav-trigger:hover {
 }
 @keyframes semicircle-in {
   80% {
-    height: 50vh;
+    height: 100vh;
     border-radius: 0%;
   }
   99% {
@@ -376,6 +375,7 @@ nav .sidenav-trigger:hover {
 }
 
 .intro-text-1 {
+  margin: 0;
   font-size: 3em;
 }
 
@@ -394,11 +394,15 @@ nav .sidenav-trigger:hover {
   width: 100%;
 }
 
+#sample-website .card {
+  z-index: 1;
+}
+
 #semicircle {
   position: absolute;
   width: 100%;
   background: #24305e;
-  height: 50vh;
+  height: 100vh;
   z-index: 0;
   -webkit-box-shadow: 0px 4px 6px #00000055;
           box-shadow: 0px 4px 6px #00000055;
@@ -487,8 +491,7 @@ video {
 }
 
 #sample-website .card {
-  border-radius: 2rem;
-  margin-top: 50vh;
+  margin-top: 100vh;
 }
 
 #sample-website .card.animated {
@@ -512,6 +515,6 @@ video {
 }
 
 .sample-website-image {
-  padding: 0 1em;
+  padding: 1em 1em 0 1em;
 }
 /*# sourceMappingURL=styles.css.map */

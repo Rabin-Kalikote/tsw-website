@@ -241,10 +241,11 @@
     <!-- Back to top -->
     <div id="top" class="scrollspy"></div>
 
+    <div id="particles-js" class="wait"></div>
+
     <!-- Full page intro -->
     <div class="intro">
         <div class="intro-photo-and-text">
-            <div id="particles-js" class="wait"></div>
             <div class="intro-description flow-text wait">
                 <p class="intro-text-1 wait" style="line-height: 1.15;">The Stunning Websites</p>
                 <p class="intro-text-2 wait" style="line-height: 1.15;">Welcome to my website</p>
@@ -256,9 +257,6 @@
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3">
                 <div class="card hoverable wait">
-                    <div class="heading">
-                        Sample Website
-                    </div>
                     <div class="sample-website-image">
                         <img src="./assets/images/sample-website-min.jpg" class="responsive-img" alt="Sample Image">
                     </div>
@@ -338,8 +336,9 @@
     <script>
         let upBtn = document.getElementById('up-btn');
         let semicircle = document.getElementById('semicircle');
-        let semicircleFromTop = semicircle.offsetTop;
+        let semicircleFromTop = semicircle.getBoundingClientRect().top;
         let navDown = document.querySelector("nav");
+        console.log(semicircleFromTop);
 
             // linearly maps value from the range (a..b) to (c..d)
         function mapRange(value, a, b, c, d) {
@@ -350,6 +349,7 @@
         }
 
         let myScrollFunc = function () {
+            semicircleFromTop = Math.max(semicircleFromTop, semicircle.getBoundingClientRect().top);
             var y = window.scrollY;
             if (y >= semicircleFromTop) {
                 upBtn.className = "fixed-action-btn shown";
@@ -357,12 +357,14 @@
                 upBtn.className = "fixed-action-btn";
             }
             semicircleFromTopOfWin = semicircle.getBoundingClientRect().top;
-            if (semicircleFromTopOfWin > 64 && window.getComputedStyle(semicircle, null).getPropertyValue('padding-left') == "5px") {
+            if (semicircleFromTopOfWin > 64) {
+                semicircleFromTopOfWin = semicircle.getBoundingClientRect().top;
+                console.log(semicircleFromTopOfWin + '\n' + semicircleFromTop);
                 // multNormal = 1 - (semicircleFromTop - 64 - semicircleFromTopOfWin) / (semicircleFromTop);
-                multNormal = mapRange(semicircleFromTopOfWin, semicircleFromTop, 64, 13, 0);
+                multNormal = mapRange(semicircleFromTopOfWin, semicircleFromTop, 64, 30, 0);
                 semicircle.style.height = multNormal + "vh";
                 navDown.style.boxShadow = "none";
-            } else if (!(semicircleFromTopOfWin > 64)) {
+            } else {
                 navDown.style.boxShadow = "0px 4px 6px #00000055";
             }
         };
