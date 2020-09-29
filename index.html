@@ -1,220 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--css links -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+<head>
+    <!-- Metadatas -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Stunning Websites - Home</title>
+    <meta property="og:type" content="profile" />
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:image:type" content="image/png" /> -->
+    <meta property="og:title" content="The Stunning Websites - Home" />
+    <!-- <meta property="og:description" content="" /> -->
+    <meta property="og:url" content="https://www.joonshakya.com.np/" />
+    <meta property="fb:app_id" content="1265498347173300" />
+    
+    <!-- <meta name="description" content=""> -->
+    <meta name="theme-color" content="#24305e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-title" content="TSW" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- <meta name="msapplication-TileColor" content="#6671c6">
+    <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png"> -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <!-- <link rel="manifest" href="./manifest.json"> -->
 
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#6671c6">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 
-    <!-- jquery links -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
 
-    <title>TSW - The Stunning Websites</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="blue darken-2 z-depth-4">
-      <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo">TSW</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Home</a></li>
-          <li><a href="badges.html">About</a></li>
-          <li><a href="collapsible.html">Services</a></li>
-          <li><a href="mobile.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2 and (orientation: portrait))" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
 
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphone5_splash_l.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphone6_splash_l.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphoneplus_splash_l.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonex_splash_l.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonexr_splash_l.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2 and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/iphonexsmax_splash_l.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipad_splash_l.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro1_splash_l.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro3_splash_l.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="/assets/splashscreens/ipadpro2_splash_l.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" /> -->
+    <style>
+        /* CSS for preloader */
+        .loader {
+            background: #202a52;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .loader>.cardhold {
+            height: 64px;
+            width: 64px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 50%;
+            -webkit-box-shadow: 4px 4px 12px #00000088;
+            box-shadow: 4px 4px 12px #00000088;
+            -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+            animation: grow .5s;
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1.25);
+            }
+        }
+
+        .lds-hourglass {
+            display: inline-block;
+            position: relative;
+            width: 64px;
+            height: 64px;
+        }
+
+        .lds-hourglass:after {
+            content: " ";
+            display: block;
+            border-radius: 50%;
+            width: 0;
+            height: 0;
+            margin: 6px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 26px solid #777;
+            border-color: #777 transparent #777 transparent;
+            -webkit-animation: lds-hourglass 1.2s infinite;
+            animation: lds-hourglass 1.2s infinite;
+        }
+
+        @-webkit-keyframes lds-hourglass {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            }
+
+            50% {
+                -webkit-transform: rotate(900deg);
+                transform: rotate(900deg);
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            100% {
+                -webkit-transform: rotate(1800deg);
+                transform: rotate(1800deg);
+            }
+        }
+
+        @keyframes lds-hourglass {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            }
+
+            50% {
+                -webkit-transform: rotate(900deg);
+                transform: rotate(900deg);
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            100% {
+                -webkit-transform: rotate(1800deg);
+                transform: rotate(1800deg);
+            }
+        }
+    </style> <!-- PreLoader CSS ends -->
+
+    <link rel="preload" href="./assets/css/materialize.min-1.0.0.css" as="style">
+    <link rel="preload" href="./assets/js/materialize.min-1.0.0.js" as="script">
+    <link rel="preload" href="./assets/css/styles.css?re=2" as="style">
+    <link rel="preload" href="./assets/fonts/Google Material Icons/set-font-family.css" as="style">
+    <link rel="preload" href="./assets/fonts/Product Sans/set-font-family.css" as="style">
+    <link rel="preload" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" as="style">
+</head>
+
+<body class="grey lighten-3 unscroll">
+
+    <!-- PreLoader -->
+    <div class="loader">
+        <div class="cardhold">
+            <div class="lds-hourglass"></div>
+        </div>
+    </div>
+    <!-- Preloader ends -->
+
+    <!-- Navigation -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#top" class="brand-logo waves-effect waves-light">TSW</a>
+                </div>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="container">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#top" class="waves-effect waves-light">Home</a></li>
+                        <!-- <li><a href="#projects" class="waves-effect waves-light">My Projects</a></li> -->
+                        <li><a href="#contact" class="waves-effect waves-light">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Home</a></li>
-      <li><a href="badges.html">About</a></li>
-      <li><a href="collapsible.html">Services</a></li>
-      <li><a href="mobile.html">Contact Us</a></li>
+        <li>
+            <div class="subheader teal-text" style="padding: 0 12px; padding-top: env(safe-area-inset-top)">
+                Navigation
+            </div>
+        </li>
+        <li><a class="sidenav-close" href="#top">Home</a></li>
+        <!-- <li><a class="sidenav-close" href="#projects">My Projects</a></li> -->
+        <li><a class="sidenav-close" href="#contact">Contact Us</a></li>
     </ul>
+    <!-- Navigation ends -->
 
-    <!-- top background -->
+    <!-- Back to top -->
+    <div id="top" class="scrollspy"></div>
 
-    <div class="top">
-      <div id="particles-js">
-        <div class="top-heading left-align">
-          <div class="row">
-            <div class="col l4 s12 m10 offset-m1 offset-l1">
-              <h2>The Stunning Websites</h2>
-              <div class="typing left">
-                <h2>We Design Websites For <span class="text"></span></h2>
-              </div>
+    <!-- Full page intro -->
+    <div class="intro">
+        <div class="intro-photo-and-text">
+            <div id="particles-js" class="wait"></div>
+            <div class="intro-description flow-text wait">
+                <p class="intro-text-1 wait" style="line-height: 1.15;">The Stunning Websites</p>
+                <p class="intro-text-2 wait" style="line-height: 1.15;">Welcome to my website</p>
             </div>
-            <div class="col l3 offset-l2 s10 m6 offset-s1 offset-m3">
-              <div class="top-image right-align">
-                <img src="assests/icons.png" alt="" />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </div> <!-- Full page intro ends -->
+    <div id="sample-website">
+        <div id="semicircle" class="wait"></div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card hoverable wait">
+                    <div class="heading">
+                        Sample Website
+                    </div>
+                    <div class="sample-website-image">
+                        <img src="./assets/images/sample-website-min.jpg" class="responsive-img" alt="Sample Image">
+                    </div>
+                    <div class="card-link">
+                        <a href="#" class="btn theme-clr" target="_blank" rel="noopener"><i
+                                class="material-icons left">play_arrow</i>
+                            Try It
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./row -->
     </div>
 
-    <!-- sample website -->
-    <div class="row">
-      <div class="title">
-        <span>Sample Website</span>
-      </div>
-      <div class="col l10 offset-l1 s12 m10 offset-l1 offset-m1">
-        <div class="sample-web">
-          <iframe src="http://manishach.tk/" frameborder="1"></iframe>
-        </div>
-      </div>
+    <!-- Section: Contact -->
+    <section id="contact" class="section scrollspy">
+        <div class="container">
+            <div class="flow-text center-align">
+                <spam class="section-heading">Contact</spam>
+                <br><br>
+            </div>
+            <div class="row">
+
+                <!-- Contact Form -->
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <div class="card-panel hoverable">
+                        <div class="flow-text">
+                            <p>I'd love to hear from you.</p>
+                        </div>
+                        <form action="https://formspree.io/xgewrkle" method="POST">
+                            <div class="input-field">
+                                <input type="text" id="name" name="name" required>
+                                <label class="active" for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" class="validate" name="email">
+                                <label class="active" for="email">Email (optional)</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea name="message" id="textarea" class="materialize-textarea"
+                                    style="transition: all .2s;" required></textarea>
+                                <label class="active" for="textarea">Comments</label>
+                            </div>
+                            <button class="btn theme-clr waves-effect waves-light" type="submit"
+                                name="action">Send
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </section> <!-- ./contact -->
+
+    <!-- Footer -->
+    <div id="up-btn">
+        <a href="#top" class="btn-floating btn-large waves-effect waves-light theme-clr hoverable">↑</a>
     </div>
-
-    <!-- website features -->
-    <div class="row container">
-      <div class="title">
-        <span>Websites Features</span>
-      </div>
-    </div>
-    <!-- cards -->
-    <div class="container">
-      <div class="row">
-        <!-- card 1 -->
-        <div class="col l4">
-          <div class="card hoverable blue-grey lighten-4">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assests/icons.png" />
+    <footer class="page-footer">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Heading</h5>
+                    <p class="grey-text text-lighten-4">Description</p>
+                </div>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >remove_red_eye</i
-                ></span
-              >
-              <p><a href="#">Click on the eye above to read more...</a></p>
+        </div> -->
+        <div class="footer-copyright">
+            <div class="container footer-flex">
+                <a href="./index.html"><u>Copyright &copy; TSW</u></a>
+                <p>V0.1</p>
             </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >close</i
-                ></span
-              >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-                ratione! Maiores natus quidem eveniet esse aspernatur dolor
-                voluptatem accusamus veniam, nisi minima, culpa aliquam
-                cupiditate, adipisci laudantium commodi voluptas consequuntur?
-              </p>
-            </div>
-          </div>
         </div>
+    </footer>
 
-        <!-- card 1 -->
-        <div class="col l4">
-          <div class="card hoverable blue-grey lighten-4">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assests/icons.png" />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >remove_red_eye</i
-                ></span
-              >
-              <p><a href="#">Click on the eye above to read more...</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >close</i
-                ></span
-              >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-                ratione! Maiores natus quidem eveniet esse aspernatur dolor
-                voluptatem accusamus veniam, nisi minima, culpa aliquam
-                cupiditate, adipisci laudantium commodi voluptas consequuntur?
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- card 1 -->
-        <div class="col l4">
-          <div class="card hoverable blue-grey lighten-4">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assests/icons.png" />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >remove_red_eye</i
-                ></span
-              >
-              <p><a href="#">Click on the eye above to read more...</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"
-                >Resposnive Design<i class="material-icons right"
-                  >close</i
-                ></span
-              >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-                ratione! Maiores natus quidem eveniet esse aspernatur dolor
-                voluptatem accusamus veniam, nisi minima, culpa aliquam
-                cupiditate, adipisci laudantium commodi voluptas consequuntur?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- javascripts -->
-    <!-- particles -->
-    <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js//app.js"></script>
-
-    <!-- typing text animation -->
-    <script type="text/javascript" src="js/typed.js"></script>
     <script>
-      var typed = new Typed(".text", {
-        strings: ["Business", "Shops", "Portfolio"],
-        typeSpeed: 60,
-        backSpeed: 60,
-        loop: true,
-      });
+        let upBtn = document.getElementById('up-btn');
+        let semicircle = document.getElementById('semicircle');
+        let semicircleFromTop = semicircle.offsetTop;
+        let navDown = document.querySelector("nav");
+
+            // linearly maps value from the range (a..b) to (c..d)
+        function mapRange(value, a, b, c, d) {
+            // first map value from (a..b) to (0..1)
+            value = (value - a) / (b - a);
+            // then map it from (0..1) to (c..d) and return it
+            return c + value * (d - c);
+        }
+
+        let myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= semicircleFromTop) {
+                upBtn.className = "fixed-action-btn shown";
+            } else {
+                upBtn.className = "fixed-action-btn";
+            }
+            semicircleFromTopOfWin = semicircle.getBoundingClientRect().top;
+            if (semicircleFromTopOfWin > 64 && window.getComputedStyle(semicircle, null).getPropertyValue('padding-left') == "5px") {
+                // multNormal = 1 - (semicircleFromTop - 64 - semicircleFromTopOfWin) / (semicircleFromTop);
+                multNormal = mapRange(semicircleFromTopOfWin, semicircleFromTop, 64, 13, 0);
+                semicircle.style.height = multNormal + "vh";
+                navDown.style.boxShadow = "none";
+            } else if (!(semicircleFromTopOfWin > 64)) {
+                navDown.style.boxShadow = "0px 4px 6px #00000055";
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
     </script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- navbar -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".sidenav");
-        var instances = M.Sidenav.init(elems, options);
-      });
+    <!-- Import -->
+    <div class="importJS">
 
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-      });
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="./assets/css/materialize.min-1.0.0.css">
+
+        <!-- Materialize JS -->
+        <script type="text/javascript" src="./assets/js/materialize.min-1.0.0.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css?re=2">
+
+        <!-- Fonts -->
+        <!-- Material Icons -->
+        <link rel="stylesheet" href="./assets/fonts/Google Material Icons/set-font-family.css">
+        <!-- Product Sans -->
+        <link rel="stylesheet" href="./assets/fonts/Product Sans/set-font-family.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Others -->
+    </div>
+
+    <script>
+        var Loaded = false;
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    
+        navDown.classList.toggle("hidden");
+
+        function initAfterPreloader() {
+            // Initialize particles-js
+            setTimeout(function () {
+                let script1 = document.createElement("script");
+                script1.type = "text/javascript";
+                script1.src = "./assets/js/particles.min.js";
+                document.getElementsByClassName("importJS")[0].appendChild(script1);
+            }, 1000);
+            setTimeout(function () {
+                let script2 = document.createElement("script");
+                script2.type = "text/javascript";
+                script2.src = "./assets/js/particles-helper.js";
+                document.getElementsByClassName("importJS")[0].appendChild(script2);
+                document.body.classList.remove('unscroll')
+            }, 2000);
+
+            // Hide PreLoader
+            var loader = document.querySelector(".loader");
+            loader.className += " hidden";
+            var loaderCard = document.querySelector(".cardhold");
+            loaderCard.className += " go-up";
+            navDown.classList.toggle("hidden");
+
+            // Initialize the animations
+            var animate = document.querySelectorAll(".wait");
+            for (var i = 0; i < animate.length; i++) {
+                animate[i].classList.add("animated");
+            }
+            Loaded = true;
+        }
+
+        console.log("4 Second Timer started");
+        setTimeout(function () {
+            if (!Loaded) {
+                initAfterPreloader();
+                console.log("Preloader hidden as the time limit exceeded");
+            }
+        }, 4000);
+
+        window.addEventListener("load", function () {
+            console.log("Page Load Completed");
+            if (!Loaded) {
+                initAfterPreloader();
+                console.log("Preloader hidden as page loaded completely");
+            }
+        });
+
+        // Finish loading the document
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Initialize Sidenav
+            var side_nav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(side_nav, {});
+
+            // Initialize Scrollspy
+            const scrollSpy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollSpy, {
+                scrollOffset: 64
+            });
+
+            // Initialize Carousel-slider
+            // var elems = document.querySelectorAll(".carousel");
+            // var instances = M.Carousel.init(elems, {
+            //     fullWidth: true,
+            //     padding: 8,
+            //     indicators: true
+            // });
+
+            // Auto slide the Carousel-slider
+            // setInterval(function () {
+            //     var el = document.querySelector(".carousel");
+            //     var l = M.Carousel.getInstance(el);
+            //     l.next(1);
+            // }, 4000);
+            // clearInterval();
+
+        }); // Load document ends
+
+        // window.addEventListener('load', e => {
+        //     registerSW();
+        //     function registerSW() { 
+        //         if ('serviceWorker' in navigator) { 
+        //             try {
+        //                 navigator.serviceWorker.register("sw.js"); 
+        //             } catch (e) {
+        //                 alert('ServiceWorker registration failed. Sorry about that.'); 
+        //             }
+        //         }
+        //     }
+        // });
     </script>
-  </body>
+
+</body>
+
 </html>
