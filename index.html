@@ -142,107 +142,59 @@
     </div>
 
     <!-- team-cards -->
-    <div class="row container">
-      <div class="col l4 s12 m6">
-        <div class="card team-card hoverable">
-          <h3>John Doe</h3>
+    <div id="tswStatus" class="row container">
+        <div class="middle flow-text">
+          <div class="cardhold">
+              <div class="preloader-wrapper small active">
+                  <div class="spinner-layer spinner-blue">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                          <div class="circle"></div>
+                      </div>
+                  </div>
+            
+                  <div class="spinner-layer spinner-red">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                          <div class="circle"></div>
+                      </div>
+                  </div>
+            
+                  <div class="spinner-layer spinner-yellow">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                          <div class="circle"></div>
+                      </div>
+                  </div>
 
-          <div class="team-img center">
-            <img src="assests/founder.jpg" alt="Not Available!" />
+                  <div class="spinner-layer spinner-green">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                          <div class="circle"></div>
+                      </div>
+                  </div>
+              </div>
           </div>
-
-          <div class="divider" style="margin-top: 5px"></div>
-
-          <h4>Founder</h4>
-
-          <div class="social-media">
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 s12 m6">
-        <div class="card team-card hoverable">
-          <h3>John Doe</h3>
-
-          <div class="team-img center">
-            <img src="assests/founder.jpg" alt="Not Available!" />
-          </div>
-
-          <div class="divider" style="margin-top: 5px"></div>
-
-          <h4>Founder</h4>
-
-          <div class="social-media">
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 s12 m6">
-        <div class="card team-card hoverable">
-          <h3>John Doe</h3>
-
-          <div class="team-img center">
-            <img src="assests/founder.jpg" alt="Not Available!" />
-          </div>
-
-          <div class="divider" style="margin-top: 5px"></div>
-
-          <h4>Founder</h4>
-
-          <div class="social-media">
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -414,6 +366,7 @@
     <!-- particles -->
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js//app.js"></script>
+    <script type="text/javascript" src="js//custom.js"></script>
 
     <!-- typing text animation -->
     <script type="text/javascript" src="js/typed.js"></script>
@@ -432,11 +385,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".sidenav");
-        var instances = M.Sidenav.init(elems, options);
-      });
-
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
+        var instances = M.Sidenav.init(elems, {});
       });
     </script>
   </body>
